@@ -16,3 +16,6 @@ Github sigup
 https://github.com/signup
 email: saparethippeswamy@gmail.com
 git id: Thippeswamysapare
+
+
+https://app.thetestingacademy.com/class/prompt-engineering-rice-pot-framework-github-setup
