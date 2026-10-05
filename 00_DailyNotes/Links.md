@@ -24,3 +24,9 @@ https://app.thetestingacademy.com/class/prompt-engineering-rice-pot-framework-gi
 ## **Notes**
 [docs.google.com/document/d/1yz5Z-TfyZkzJ2g9xgZx29Y3ii8xaSGbg/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true](https://docs.google.com/document/d/1yz5Z-TfyZkzJ2g9xgZx29Y3ii8xaSGbg/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true) 
 
+
+## **Doubt thead**
+https://www.sdetclub.com/c/playwright-4x
+https://www.sdetclub.com/c/playwright-4x/doubt-2-oct-prompt-engineering
+https://www.sdetclub.com/c/playwright-4x/doubt-5-oct-introduction-to-javascript
+
