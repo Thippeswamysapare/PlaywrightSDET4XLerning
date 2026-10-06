@@ -41,24 +41,6 @@ A website is built with **three core technologies**
     1. Java -> **int** a = 10;  x -> no possitble a= "Pramod" // Data type 100%
     2. Javascript let a = 10;  -> a= "Pramod"
 
-
-- Where it runs: **_Originally designed to run in web browsers,_** JavaScript now also runs on servers (via Node.js), mobile apps, desktop applications, and even IoT devices.
-- Core features: **It supports object-oriented, functional, and event-driven programming styles**. It's dynamically typed, meaning you don't need to declare variable types explicitly.
-- The **DOM:** **JavaScript can manipulate the Document Object Model (DOM)**, allowing it to dynamically change a webpage's content, structure, and styling in real time without reloading.
-- **Asynchronous programming**: It supports asynchronous operations through callbacks, Promises, and `async/await`, making it efficient for tasks like API calls and file handling.
-- Ecosystem: **It has a massive ecosystem of libraries** and frameworks such as React, Angular, Vue.js (frontend) and Express, Next.js (backend), supported by the npm package manager.
-- **Universal adoption:** JavaScript is the most widely used programming language in the world, supported by all modern browsers and backed by a huge developer community.
-
-
-  Java Vs Javascript
-
-1.  **There is no relationship between Java and JavaScript,**when JavaScript was created, Java was a more popular language, so they created or named it JavaScript.
-2. JavaScript was created by American computer programmer Brendan Eich in **1995** while working at Netscape.
-3. Java language has no relationship with JavaScript
-4. JS there not concept of giving datatype at the start, 
-    1. Java -> **int** a = 10;  x -> no possitble a= "Pramod" // Data type 100%
-    2. Javascript let a = 10;  -> a= "Pramod"
-
 <img width="1844" height="1160" alt="image" src="https://github.com/user-attachments/assets/51b2c668-5cbd-46ad-b59e-b85057f80e3e" />
 
 ## **Is JavaScript Compiled or Interpreted?**
