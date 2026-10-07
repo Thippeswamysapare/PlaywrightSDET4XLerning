@@ -203,7 +203,10 @@ console.log(2*2);
 ```
 - Byte Code
 - Machine Code
-- Binary Code 
+- Binary Code
+
+  <img width="1698" height="926" alt="image" src="https://github.com/user-attachments/assets/152a664d-31c8-4270-b177-3abe10fd61df" />
+
 
 
 
