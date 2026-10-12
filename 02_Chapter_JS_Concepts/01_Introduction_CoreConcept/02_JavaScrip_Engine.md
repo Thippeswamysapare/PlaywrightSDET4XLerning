@@ -62,10 +62,13 @@ Program
 Bytecode might look like:
 
 LdaSmi [10]      // Load immediate small integer 10
+
 Star <x>         // Store into variable a
+
 LdaGlobal console
 LdaNamedProperty log
 Lda <x>          // Load value of a
+
 CallProperty1    // Call log with 1 argument
 
 <img width="1074" height="1212" alt="image" src="https://github.com/user-attachments/assets/aac6d109-54fc-4ef4-a581-e9a8a74eb825" />
