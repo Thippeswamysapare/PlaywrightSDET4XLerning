@@ -43,17 +43,7 @@ The tokens are converted into a structured tree representing the logic.
 Simplified AST example:
 
 Program
-├── VariableDeclaration (let)
-
-│     └── Identifier: a
-
-│     └── Literal: 10
-
-└── ExpressionStatement
-
-      └── CallExpression: console.log
-      
-            └── Identifier: a
+<img width="204" height="73" alt="image" src="https://github.com/user-attachments/assets/e0acf156-c6c4-4a6a-98f0-e3bea350c5d3" />
 
 <img width="1312" height="806" alt="image" src="https://github.com/user-attachments/assets/a985024f-861f-4f6b-834b-4104857bd6e3" />
 
