@@ -44,10 +44,15 @@ Simplified AST example:
 
 Program
 ├── VariableDeclaration (let)
+
 │     └── Identifier: a
+
 │     └── Literal: 10
+
 └── ExpressionStatement
+
       └── CallExpression: console.log
+      
             └── Identifier: a
 
 <img width="1312" height="806" alt="image" src="https://github.com/user-attachments/assets/a985024f-861f-4f6b-834b-4104857bd6e3" />
