@@ -71,16 +71,8 @@ CallProperty1    // Call log with 1 argument
 
 ### 6. Profiler + JIT Optimization
 
-// Complex code
-for(a=0; a<10000; a++)
-{
-    console.log(a);
-    badCodeFn();
-}
+<img width="298" height="150" alt="image" src="https://github.com/user-attachments/assets/49257776-c778-41b4-bef3-ff7d9e8149ad" />
 
-badCodeFn = () => {
-console.log("This is a bad code function");
-}
  JIT full form is Just In Time 
 
 Since this code is very small and not repeated, the **Profiler sees no benefit**, so **TurboFan (JIT Compiler) does NOT optimize**.
