@@ -90,6 +90,8 @@ Cold Code ->  the code which does not require
 ### 8. Garbage Collector 
 Automatically frees memory by removing unused or unreachable objects. Prevents memory leaks and keeps performance efficient.
 
+Ex: let a; ('a' is not assigned with any value)
+
 ### 9. Machine Code Execution
 The final optimized code is executed directly by the **CPU**. This gives the best performance at runtime.
 
