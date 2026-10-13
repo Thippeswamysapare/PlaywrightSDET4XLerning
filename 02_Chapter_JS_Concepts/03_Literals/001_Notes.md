@@ -46,7 +46,7 @@ What does console.log(0b1010 + 0o10 + 0xA) print? ( 10,8, 10)
 
 primitive means they cannot be broken down further 
 
- ![02_Literals](Images/image.png)
+ ![03_Literals](Images/image.png)
 
 
  # **Non** Primitive **Data**
