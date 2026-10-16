@@ -4,11 +4,9 @@ let isSturden = true;
 let num = 25 ;// This is a Number literal
 let pi = 3.14 ;  // This is a Number literal
 let nullValue = null;
-
 let undefinedValue = undefined;
-
 console.log(typeof age); 
-console.log(typeof name);
+console.log(names);
 console.log(typeof isSturden);
 console.log(typeof num);
 console.log(typeof pi);

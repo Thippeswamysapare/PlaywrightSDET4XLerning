@@ -7,4 +7,3 @@ console.log(typeof isStuden); // Output: boolean
 console.log(typeof isStudent); // Output: boolean
 console.log(typeof isTeacher); // Output: boolean
 console.log(typeof isTotalMarks); // Output: number 
-

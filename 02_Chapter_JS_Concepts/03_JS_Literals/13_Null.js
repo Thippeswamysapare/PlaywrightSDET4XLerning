@@ -8,3 +8,4 @@ console.log(typeof PiValue); // Output: undefined
 
 console.log(is_definied); // output: null
 console.log(is_undefined); // output: undefined
+

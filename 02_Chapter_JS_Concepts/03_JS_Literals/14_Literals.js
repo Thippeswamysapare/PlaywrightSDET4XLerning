@@ -11,3 +11,4 @@ console.log(typeof zero); // Output: number
 console.log(typeof hexadecimal); // Output: number
 console.log(typeof million); // Output: number  
 console.log(typeof tiny); // Output: number
+
