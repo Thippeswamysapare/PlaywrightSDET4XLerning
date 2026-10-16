@@ -11,7 +11,7 @@ let ab_b2 ="Value1";
 
 // let 2ndPrize = "Second prize"; // Invalid identifier
 
-let Function = "invalid";
+// let Function = "invalid"; // Invalid identifier. 'Function' is a reserved keyword in JavaScript.
 
 let MyVar = "uppercase M";
 let myvar = "lowercase v";

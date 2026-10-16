@@ -9,6 +9,6 @@ const b =30 // This is a constant declaration and initialization    . The consta
 // in QA world we use
 // let  - 96 %
 // const - 3 %
-// var - 1 %
+// var - 1 %  // Var is not trust worthy
 
 

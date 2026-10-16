@@ -10,9 +10,9 @@ var LastName = "Doe";
 let user_name = "JohnDoe"; // Valid identifier and it is Snake case notation. In JavaScript, snake_case is less common but still valid, where words are separated by underscores.
 let last_name_of_city = "New York"; 
 
-// 4. Screming Snake case  
+// 4. Screaming Snake case  
 const MAX_VALUE = 100; 
-const PIE_VALIE = 3.14; 
+const PIE_VALUE = 3.14; 
 
 // 5. Hungarian notation
 var strName = "John";
@@ -23,3 +23,8 @@ let bActive = true;
 // where words are separated by underscores.
 var This_is_very_long_variable_name = "This is a long variable name";
 
+// var First Name = "John"; // Space is not allowed
+
+//var 1OneFirst ="Apple"; // Invalid identifier. 
+// In JavaScript, variable names cannot start with a digit. 
+// Therefore, '1OneFirst' is not a valid identifier.
