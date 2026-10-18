@@ -8,4 +8,5 @@ let slaStatus = responseTime <= sla
 console.log(`Response: ${responseTime}ms - ${slaStatus}`);
  // ${responseTime} and ${slaStatus} are used within the template literal to dynamically insert 
  //    their values into the string.
+ //  ` backtick 
  

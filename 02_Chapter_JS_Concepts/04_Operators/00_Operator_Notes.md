@@ -176,5 +176,27 @@ Response: 850ms - Within SLA ✅
 
 ### Ternary operator with Multiple conditions
 
+
+
 ## Data type in JavaScript
 ![04_Operators](Images/image-4.png)    
+
+#### Note link:
+
+[docs.google.com/document/d/1yz5Z-TfyZkzJ2g9xgZx29Y3ii8xaSGbg/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true]
+(https://docs.google.com/document/d/1yz5Z-TfyZkzJ2g9xgZx29Y3ii8xaSGbg/edit?usp=sharing&ouid=104755920778477387077&rtpof=true&sd=true) 
+
+------------------------------------------------------------------------------------------
+## Increment and decrement Operator ( ++, --) 
+
+Pre and Post 
+
+ let a= 10;
+
+- pre -   ++a ->. Pre
+    - **first increase the value by 1, then assign the value.**
+
+- post a++ ->  
+    - **First, assign the value, then increment by 1**
+
+![04_Operators](Images/image-5.png)    
