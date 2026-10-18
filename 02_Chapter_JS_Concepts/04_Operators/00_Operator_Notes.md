@@ -108,5 +108,73 @@ console.log(""  == "0" );  // Here both are string compare as it is
 
 ## Ternary operator
 - **Condition** either this or either data.  
+
 - Syntax -> condition ?  if(true) do this :  if false(do this)  
-- `// **condition** ?  value1(if true)  : value2 (if false)` 
+
+- ` **condition** ?  value1(if true)  : value2 (if false)` 
+
+Ex:  
+let age =20;
+
+let canDrive = age >= 16 ? "Yes" : "No";  
+console.log(`Can the person drive? ${canDrive}`);     
+
+let canDrink = age >= 25 ? "Yes" : "No";  
+console.log(`Can goto Goa & Drink? ${canDrink}`);  
+
+Condition :   age >= 25 , if true then "Yes" is assigned to canDrink else "No" is assigned to canDrink
+
+Ex:
+
+let statusCode= 200;   
+let statusErorCode= 400;  
+
+let expectedStatus = 200;     
+let statusMessage = statusCode === expectedStatus ? "Success" : "Failure";  
+console.log(`Status check: ${statusMessage}`);  
+
+let errorMessage = statusErorCode === expectedStatus ? "Success" : "Failure";  
+console.log(`Status check: ${errorMessage}`);  
+
+Output:  
+Status check: Success  
+Status check: Failure  
+
+
+Ex: 
+
+let environment = "production";  
+let baseUrl = environment === "production" ?   
+"httpr://prodUrl.com" : "https://stagingUrl.com";  
+
+console.log(`Base URL: ${baseUrl}`);  
+//console.log("environment " + environment);  
+
+let baseUrl2 = environment === "Staging" ?   
+"httpr://prodUrl.com" : "https://stagingUrl.com";  
+
+console.log(`Base URL: ${baseUrl2}`);  
+
+Output:  
+Base URL: httpr://prodUrl.com  
+Base URL: https://stagingUrl.com  
+
+Ex:  
+
+let responseTime = 850; // ms  
+let sla = 1000;         // ms  
+
+let slaStatus = responseTime <= sla  
+    ? "Within SLA ✅"  
+    : "SLA breached ❌";  
+
+console.log(`Response: ${responseTime}ms - ${slaStatus}`);  
+
+Ouput:  
+
+Response: 850ms - Within SLA ✅
+
+### Ternary operator with Multiple conditions
+
+## Data type in JavaScript
+![04_Operators](Images/image-4.png)    
