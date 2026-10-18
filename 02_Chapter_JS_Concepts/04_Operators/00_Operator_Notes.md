@@ -105,3 +105,8 @@ console.log("" == 0); //true
 console.log("0" == 0);  // true  
 console.log(""  == "0" );  // Here both are string compare as it is   
 // Transitivity broken because "" == 0 and 0 == "0" but "" != "0"  -> Coerced  
+
+## Ternary operator
+- **Condition** either this or either data.  
+- Syntax -> condition ?  if(true) do this :  if false(do this)  
+- `// **condition** ?  value1(if true)  : value2 (if false)` 
