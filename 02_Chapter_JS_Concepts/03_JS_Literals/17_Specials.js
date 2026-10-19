@@ -27,4 +27,4 @@ console.log("Special number ", (0b1010 + 0o10 + 0xA));
 
  console.log("Lenght is ",[1, , 3, 56, 'T'].length)
 
- console.log("Lenght is ",[1, , 3, 56, L].length)
+ console.log("Lenght is ",[1, , 3, 56, L].length)  //  S is not defined
