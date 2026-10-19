@@ -186,3 +186,50 @@ Banana selected
 Cherry selected  
 Date selected  
 Default reached  
+
+
+### Tricky Example:
+
+```
+let status = 0;
+
+console.log(typeof status);
+
+switch (status) {
+    case false:
+        console.log("false matched");
+        break;
+
+    case 0:
+        console.log("0 matched");
+        break;
+}
+```
+
+Output:  
+number  
+0 matched  
+
+Explanation :  
+status is assigned the value 0.  
+    let status = 0;  
+
+typeof status returns:  
+    number  
+
+In a switch statement, comparisons are done using strict equality (===).
+    0 === false // false
+
+Therefore  
+case false: ❌ does not match  
+case 0: ✅ matches  
+
+Evaluation Flow :
+
+status = 0  
+
+case false  -> 0 === false  -> false  
+case 0      -> 0 === 0      -> true  
+
+###  Note:
+### Switch is (===) strict comparision
