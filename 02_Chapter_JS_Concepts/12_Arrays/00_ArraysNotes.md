@@ -536,3 +536,252 @@ filter() ==> Keep Matching Elements
 
 ### Summary
 ![12_Arrays](Images/image-3.png)
+
+## Sorting Array
+
+sort() arranges strings in alphabetical (Unicode) order.
+
+```
+let fruites =[ "banana", "apple","cherry","guva" ];
+fruites.sort();
+console.log(fruites);
+
+Sorts an array in place. This method mutates the array and returns a reference to the same array.
+By default, the sort() method sorts the elements as strings in alphabetical and ascending order.
+
+
+```
+```
+let fruites2 =[ "banana", "apple","muskmillon","cherry","guva" ];
+console.log("------- Before sort ---------")
+console.log(fruites2);
+console.log("-------After sor ---------")
+fruites2.sort();
+console.log(fruites2);
+
+Output:
+------- Before sort ---------
+[ 'banana', 'apple', 'muskmillon', 'cherry', 'guva' ]
+-------After sor ---------
+[ 'apple', 'banana', 'cherry', 'guva', 'muskmillon' ]
+```
+
+```
+let fruites3 =[ "banana", "apple","Muskmillon","Cherry","guva" ];
+console.log("------- Before sort ---------")
+console.log(fruites3);
+console.log("-------After sorting ---------")
+fruites3.sort();
+console.log(fruites3);
+
+Output:
+
+------- Before sort ---------
+[ 'banana', 'apple', 'Muskmillon', 'Cherry', 'guva' ]
+-------After sorting ---------
+[ 'Cherry', 'Muskmillon', 'apple', 'banana', 'guva' ]
+
+```
+
+**Notice that:**
+
+Uppercase letters (C, M) come before lowercase letters (a, b, g).  
+Therefore "Cherry" and "Muskmillon" appear first.
+
+### Case-insensitive sorting
+
+```
+let fruites3 = ["banana", "apple", "Muskmillon", "Cherry", "guva"];
+
+fruites3.sort((a, b) => a.localeCompare(b));
+
+console.log(fruites3);
+
+Output:
+["apple", "banana", "Cherry", "guva", "Muskmillon"]
+```
+
+## Sorting Number
+
+```
+let number = [10,1,21,2];
+number.sort();
+console.log(number);
+
+Ouput: [ 1, 10, 2, 21 ]
+```
+>. The default sort() method sorts numbers as strings, which may lead to unexpected results.  
+>. To sort numbers correctly, a compare function should be used.  
+>. Natual sorting or Lexicographical sorting can lead to different results.  
+
+performs lexicographical (dictionary/alphabetical) sorting, not numeric sorting.  
+
+In 'lexicographical' it will compare the first character 
+
+Ex:
+[10,1,21,1] --> from 10 it will take 1 the compare to 1]
+```
+Default sort()
+
+[10, 1, 21, 2]
+        │
+        ▼
+Convert to Strings
+        │
+        ▼
+["10", "1", "21", "2"]
+        │
+        ▼
+Dictionary Order
+        │
+        ▼
+[1, 10, 2, 21]
+
+❌ Not Numeric Sorting
+
+```
+
+```
+Numeric sort()
+
+[10, 1, 21, 2]
+        │
+        ▼
+(a,b)=>a-b
+        │
+        ▼
+[1, 2, 10, 21]
+
+✅ Numeric Sorting
+
+```
+
+![12_Arrays](Images/image-4.png)
+
+**To Sort number in Ascending order we use Arrow function**
+```
+let number = [10,1,21,2];
+number.sort((a, b) => a - b);
+console.log(number);
+
+Output:
+[ 1, 2, 10, 21 ]
+```
+
+**To Sort number in decending order we use Arrow function**
+```
+let number = [10,1,21,2];
+number.sort((a, b) => b - a);
+console.log(number);
+
+Output:
+[ 21, 10, 2, 1 ]
+```
+
+```
+Explanation:
+
+Code
+───────────────────────────────────────────────────────────────
+let number = [10, 1, 21, 2];
+number.sort((a, b) => a - b);
+console.log(number);
+───────────────────────────────────────────────────────────────
+What does (a, b) => a - b do?
+
+a - b < 0   → a comes before b
+a - b > 0   → b comes before a
+a - b = 0   → no change
+───────────────────────────────────────────────────────────────
+
+Input Array
+
+Index
+ 0    1    2    3
+
+┌────┬───┬────┬───┐
+│ 10 │ 1 │ 21 │ 2 │
+└────┴───┴────┴───┘
+
+───────────────────────────────────────────────────────────────
+Step 1
+
+Compare 10 and 1
+
+10 - 1 = 9  (> 0)
+
+┌───┬────┐
+│ 1 │ 10 │
+└───┴────┘
+
+Swap ✅
+
+───────────────────────────────────────────────────────────────
+
+Step 2
+
+Compare 10 and 21
+
+10 - 21 = -11 (< 0)
+
+Keep Order ✅
+
+┌────┬────┐
+│ 10 │ 21 │
+└────┴────┘
+
+───────────────────────────────────────────────────────────────
+
+Step 3
+
+Compare 21 and 2
+
+21 - 2 = 19 (> 0)
+
+Swap ✅
+
+┌───┬────┐
+│ 2 │ 21 │
+└───┴────┘
+
+───────────────────────────────────────────────────────────────
+
+Final Sorted Array
+
+┌───┬───┬────┬────┐
+│ 1 │ 2 │ 10 │ 21 │
+└───┴───┴────┴────┘
+
+Index
+ 0   1    2    3
+
+───────────────────────────────────────────────────────────────
+
+Console Output
+
+[1, 2, 10, 21]
+
+───────────────────────────────────────────────────────────────
+
+Visual Flow
+
+[10, 1, 21, 2]
+          │
+          ▼
+sort((a,b)=>a-b)
+          │
+          ▼
+Compare Numbers
+          │
+          ▼
+Ascending Order
+          │
+          ▼
+[1, 2, 10, 21]
+
+✅ Numeric Sorting
+✅ Ascending Order
+✅ Most common interview question
+
+sort((a, b) => a - b) sorts numbers in ascending numeric order, unlike the default sort() which performs lexicographical (dictionary) sorting.
+```

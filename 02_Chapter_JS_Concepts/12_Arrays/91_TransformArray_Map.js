@@ -13,4 +13,5 @@ let grade2 = scores.map(i => i > 70 ? "Pass" : "Fail");
 console.log(grade2);
 // Calls a defined callback function on each element of an array, and returns an array that contains the results.
 
-
+// Map is funtion , it will transform the array into the new array with same 
+//size 
