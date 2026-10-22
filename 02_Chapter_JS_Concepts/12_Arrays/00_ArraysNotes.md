@@ -785,3 +785,24 @@ Ascending Order
 
 sort((a, b) => a - b) sorts numbers in ascending numeric order, unlike the default sort() which performs lexicographical (dictionary) sorting.
 ```
+
+### String compare using localeCompare() function
+``` 
+
+
+let fruites =[ "banana", "apple","Muskmillon","Cherry","guva" ];
+fruites.sort((a, b) => a.localeCompare(b));
+console.log(fruites);   
+
+The localeCompare() method compares two strings in the current locale, allowing for proper alphabetical sorting.    
+
+Output:
+[ 'apple', 'banana', 'Cherry', 'guva', 'Muskmillon' ]
+
+To Sort strings in descending order we can use localeCompare with reversed order
+
+fruites.sort((a, b) => b.localeCompare(a));
+console.log(fruites);
+
+Output: 
+[ 'Muskmillon', 'guva', 'Cherry', 'banana', 'apple' ]
