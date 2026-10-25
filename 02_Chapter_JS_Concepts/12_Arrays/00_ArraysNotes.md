@@ -806,3 +806,187 @@ console.log(fruites);
 
 Output: 
 [ 'Muskmillon', 'guva', 'Cherry', 'banana', 'apple' ]
+
+```
+## Slicing Array
+>. Sciling array means cutting the array from given range  
+>. Slice the array from index 1 to 3 (excluding 3)  
+>. Slice(start,end) - start index is inclusive, end index is exclusive  
+>. Returns a new array containing the selected elements      
+>. Does not mutate the original array ->(start, end-1) => index=0 take from start to end  
+>. slice() does not modify the original array. It creates a new array.  
+>. Index moving from Left to Right in bote position & nagetive indexation
+
+```
+Ex:
+let arr = [1, 2, 3, 4, 5];
+
+console.log(arr.slice(1, 3));
+console.log(arr);
+
+Output:
+[ 2, 3 ]
+[ 1, 2, 3, 4, 5 ]
+```
+
+![12_Arrays](Images/image-5.png)
+
+```
+// Not mentioning the end
+console.log(arr.slice(2)); // Slices from index 2 to the end of the array
+
+Output:
+[ 3, 4, 5 ]
+
+// Using negative indices
+console.log(arr.slice(-3)); // Slices the last 3 elements of the array
+
+Output:
+[ 3, 4, 5 ]
+
+```
+![12_Arrays](Images/image-6.png)
+
+```
++ve Index: 0  1  2  3  5
+Value    : 1  2  3  4  5
+-ve index:-5 -4 -3 -2 -1
+
+Slicing with both negative start and end indices
+
+console.log(arr.slice(-4, -1)); 
+Slices from the 4th last to the 2nd last element of the array
+
+Output: [ 2, 3, 4 ]
+Slicing with start index greater than end index
+
+console.log(arr.slice(3, 1)); 
+Returns an empty array because it start index is greater than end index
+
+Output: [ ]
+
+console.log(arr.slice(-3, -5)); 
+Returns an empty array because start index is greater than end index when using negative indices
+Output: [ ]
+```
+
+![12_Arrays](Images/image-7.png)
+
+It prints `[]`, an empty array, because the start index ends up after the end index. Here’s why, step by step:
+
+1. **Negative numbers count back from the end.** `arr` has 5 items, so a negative index means “length plus that number”:
+   - `-3` → `5 + (-3)` = `2`
+   - `-5` → `5 + (-5)` = `0`
+
+2. **Apply those as the slice indices.** `arr.slice(-3, -5)` becomes `arr.slice(2, 0)`.
+
+3. **The start index is after the end index.** Since `slice()` takes elements from the start up to (but not including) the end, there are no elements to return.
+
+## Array Transform using Every and some
+
+## Every - All must pass
+If all conditions become true then return true else return false
+
+```
+Ex:
+ let numbers = [80,90,85];
+ let allEven = numbers.every(num => num > 70);
+    console.log(allEven); 
+
+Output:  true
+```
+![12_Arrays](Images/image-8.png)
+
+```
+let all2 = numbers.every(num => num > 85);
+console.log(all2); // false
+
+Output: False
+```
+
+  ### Some - AT Least One Must Pass
+```
+    let numbers = [80,90,85];
+    
+    let someAbove85 = numbers.some(num => num > 85);
+    console.log(someAbove85); // true
+
+    let someAbove90 = numbers.some(num => num > 90);
+    console.log(someAbove90); // false
+```
+### Copy Array using Slice and Modern concate(...)
+```
+let originalArray = [1, 2, 3];
+let copiedArray = [...originalArray];
+console.log(copiedArray); // [ 1, 2, 3 ]
+
+// Modifying the copied array does not affect the original array
+copiedArray.push(4);
+console.log(copiedArray); // [ 1, 2, 3, 4 ]
+console.log(originalArray); // [ 1, 2, 3 ]
+
+// Slice 
+let slicedArray = originalArray.slice();
+console.log(slicedArray); // [ 1, 2, 3 ]
+
+```
+
+## Note
+
+>. **When you create a copy of an array using the spread operator (...) or the slice() method, a new array is created in memory. As a result, any changes made to the copied array do not affect the original array.**
+
+>. **However, when you directly assign one array variable to another, both variables reference the same array object in memory. Therefore, modifying the array through one variable will also be reflected when accessing it through the other variable.**
+
+```
+let originalArray = [1, 2, 3];
+let copiedArray = [...originalArray]; // Using Spead Operator
+console.log(copiedArray); // [ 1, 2, 3 ]
+
+// Modifying the copied array does not affect the original array
+copiedArray.push(4);
+console.log(copiedArray); // [ 1, 2, 3, 4 ]
+console.log(originalArray); // [ 1, 2, 3 ]
+
+// Slice 
+let slicedArray = originalArray.slice();
+console.log(slicedArray); // [ 1, 2, 3 ]
+
+// Arrays are mutable in nature, meaning their elements can be changed 
+// after creation
+
+let deep_copiedArray = originalArray;
+deep_copiedArray.push(4);
+console.log(deep_copiedArray); // [ 1, 2, 3, 4 ]
+console.log(originalArray); // [ 1, 2, 3, 4 ]   
+```
+
+
+
+### Array Deconstructing
+```
+let a = [1, 2, 3];
+let [x, y, z] = a;
+console.log(x); // 1
+console.log(y); // 2
+console.log(z); // 3
+
+let [first, second, third] = [10,20,30];
+console.log(first); // 10
+console.log(second); // 20
+console.log(third); // 30
+```
+
+```
+let [a,b, ...arr] = [10,20,30,45,67,89,90];
+console.log(a); // 10
+console.log(b); // 20
+console.log(arr); // [ 30, 45, 67, 89, 90 ]
+```
+![12_Arrays](Images/image-9.png)
+
+```
+Ex:
+let [, , thirdElement] = [1, 2, 3];
+console.log(thirdElement); // 3
+```
+![12_Arrays](Images/image-10.png)

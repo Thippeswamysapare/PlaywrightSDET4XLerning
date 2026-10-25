@@ -7,7 +7,7 @@ console.log(number);
 
 
 // To Sort number in Ascending order we using Arrow function
-number.sort((a, b) => a - b);
+number.sort((a, b) => a - b); //--> This is a arrow function for ascending order
 console.log(number);
 
 // To Sort number in decending order we using Arrow function
