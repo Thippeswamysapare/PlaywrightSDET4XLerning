@@ -18,3 +18,4 @@ let deep_copiedArray = originalArray;
 deep_copiedArray.push(4);
 console.log(deep_copiedArray); // [ 1, 2, 3, 4 ]
 console.log(originalArray); // [ 1, 2, 3, 4 ]   
+
