@@ -8,3 +8,4 @@ typeof missingName;
 let missingName;
 console.log(typeof missingName);
 // ReferenceError: Cannot access 'missingName' before initialization
+
